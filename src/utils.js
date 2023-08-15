@@ -35,7 +35,7 @@ const MONGO_PASS = process.env.MONGO_PASS;
 
 export async function connectMongo() {
   try {
-    await connect(`mongodb+srv://${MONGO_USER}:${MONGO_PASS}@coderbackend.1nd8mzz.mongodb.net/ecommerce`);
+    await connect(`mongodb+srv://${MONGO_USER}:${MONGO_PASS}@atlascluster.z0mmpcl.mongodb.net/?retryWrites=true&w=majority`);
     console.log('Plug to mongo!');
   } catch (error) {
     console.log(error);
